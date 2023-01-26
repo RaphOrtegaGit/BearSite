@@ -13,15 +13,15 @@
     <header class="nav">
         <img class="bearlogo" src="/images/logo.png" alt="bear logo">
         <button class="navbtn" id="navbtn"><img src="/images/menu.png" alt=""></button>
-        <nav class="nav-collapse topnav" id="nav-collapse">
+        <div class="nav-collapse topnav" id="nav-collapse">
             <a class="links" href="">Home</a>
             <a class="links" href="">About</a>
             <a class="links" href="">Contact</a>
             <a class="links" href="">Services</a>
-            <a class="links" href=""><img src="/images/fb.png" alt="fb"></a>
+            <a class="links" href=""><img src="/images/fb.png" alt="fb"><span id="fb"></span></a>
             <a class="links" href=""><img src="/images/twitter.png" alt="twitter"></a>
             <a class="links" href=""><img src="/images/youtube.png" alt="youtube"></a>
-        </nav>
+        </div>
     </header>
     <div class="header">
         <h1 class="header-title">Lorem ipsum dolor sit amet consectetur.</h1>
@@ -121,8 +121,12 @@
                     <div class="frmInputs">
                         <label for="phone">Your phone</label>
                         <br>
-                        <input placeholder="Code" type="number" class="code" required>
-                        <input placeholder="Phone" type="tel" name="phone" class="number" id="number" required>
+                        <input placeholder="Code" type="text" class="code"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            required>
+                        <input placeholder="Phone" type="tel" name="phone" class="number" id="number"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            required>
                     </div>
                     <input type="submit" class="formSubmit">
                 </form>

@@ -18,6 +18,7 @@ p.small {
     background-color: black;
     text-align: right;
     padding: 30px 10.625em;
+    /* height: fit-content; */
 }
 
 .links {
@@ -308,17 +309,18 @@ footer {
     }
 
     .links {
-        margin: auto 20%;
-        padding: 0px 100px;
-        background-color: black;
+        margin: 0%;
+        line-height: 2;
+        padding: 0px 20px 10px 190px;
+
+        text-align: right;
     }
 
+
     .nav-collapse {
-        /* background-color: black; */
-        /* height: 100%; */
+        background-color: black;
+        margin-top: 40px;
+        position: sticky;
         display: none;
-        /* width: 100%; */
-        /* padding-top: 50px; */
-        /* position: relative; */
     }
 }
