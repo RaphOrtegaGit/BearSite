@@ -1,0 +1,181 @@
+body {
+    margin: 0px;
+}
+
+.white {
+    color: #9a9a9a !important;
+}
+
+p.small {
+    word-break: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Navbar design */
+.nav {
+    background-color: black;
+    text-align: right;
+    padding: 30px 10.625em;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    font-family: "ProximaNovaRegular";
+}
+
+.bearlogo {
+    padding: 0px;
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+/* Header Design */
+.header {
+    text-align: center;
+    padding: 180px 0px 340px;
+    background-image: url('/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-title {
+    font-family: "ProximaNovaLight";
+    font-size: 44px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.subheader {
+    font-family: "STMGoudy";
+    color: #808283;
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+.btnContact {
+    border: 0px;
+    background-color: black;
+    color: white;
+    margin-top: 14px;
+    padding: 14px 60px;
+    letter-spacing: 1px;
+    font-family: "ProximaNovaRegular";
+
+}
+
+/* Slicing Test */
+.slicingTest {
+    text-align: center;
+    padding: 40px 340px;
+}
+
+.smalltitle {
+    font-size: 36px;
+}
+
+.subtext {
+    font-family: "Lato";
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* 2 column layout */
+.columnLayout {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    background-color: black;
+    color: white;
+    padding: 30px 200px 30px 200px;
+}
+
+/* Forms */
+
+.formcont {
+    margin: 40px 180px;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #dde5e5;
+    padding-top: 50px;
+}
+
+.wrapped {
+    margin-right: 45px;
+}
+
+.wrappedttl {
+    margin-top: 10px;
+}
+
+.wraptxt {
+    font-size: 14px;
+    /* padding-right: 0px; */
+    line-height: 1.6;
+    font-family: "Lato";
+}
+
+.contactForm {
+    display: block;
+    background-color: black;
+    color: white;
+
+}
+
+.frmTtl {
+    text-align: center;
+    font-family: "STMGoudy";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 38px;
+    margin-top: 40px;
+    color: #b4b4b4;
+}
+
+form {
+    padding: 20px 50px;
+}
+
+label {
+    font-family: "Lato";
+}
+
+.formSubmit {
+    border: 0px;
+    background-color: #dca115;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: #777777;
+}
+
+/* fonts */
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("/fonts/Proxima Nova Regular.ttf");
+}
+
+@font-face {
+    font-family: "ProximaNovaLight";
+    src: url("/fonts/Proxima Nova Light.ttf");
+}
+
+@font-face {
+    font-family: "STMGoudy";
+    src: url("/fonts/SortsMillGoudy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato-Regular.ttf");
+}
