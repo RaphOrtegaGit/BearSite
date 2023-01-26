@@ -35,6 +35,27 @@ p.small {
     margin-top: -10px;
 }
 
+.navbtn {
+    display: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px;
+    float: right;
+    padding-bottom: 1px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbtn:hover {
+    filter: invert(50%);
+    border: 1px solid white;
+}
+
+.navbtn:active {
+    filter: invert(0%);
+    background-color: #9a9a9a;
+}
+
 /* Header Design */
 .header {
     text-align: center;
@@ -73,11 +94,11 @@ p.small {
 /* Slicing Test */
 .slicingTest {
     text-align: center;
-    padding: 40px 340px;
+    padding: 2.5em 21.25em;
 }
 
 .smalltitle {
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
 .subtext {
@@ -90,25 +111,25 @@ p.small {
 .columnLayout {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 30px;
+    column-gap: 1.875em;
     background-color: black;
     color: white;
-    padding: 30px 200px 30px 200px;
+    padding: 1.875em 12.5em;
 }
 
 /* Forms */
 
 .formcont {
-    margin: 40px 180px;
-    padding: 10px 50px;
+    margin: 2.5em 11.25em;
+    padding: 0.625em 3.125em;
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #dde5e5;
-    padding-top: 50px;
+    padding-top: 3.125em;
 }
 
 .wrapped {
-    margin-right: 45px;
+    margin-right: 2.8125em;
 }
 
 .wrappedttl {
@@ -126,37 +147,88 @@ p.small {
     display: block;
     background-color: black;
     color: white;
-
+    height: fit-content;
 }
 
 .frmTtl {
     text-align: center;
     font-family: "STMGoudy";
     font-weight: 400;
-    font-style: italic;
-    font-size: 38px;
-    margin-top: 40px;
+    /* font-style: italic; */
+    font-size: 2.375em;
+    margin-top: 1.3em;
+    margin-bottom: 0em;
     color: #b4b4b4;
 }
 
 form {
-    padding: 20px 50px;
+    padding: 1em 3.125em;
 }
 
 label {
     font-family: "Lato";
 }
 
+.Input {
+    width: 95%;
+    padding: 0.625em;
+    margin-top: 0.625em;
+    margin-bottom: 1.5625em;
+}
+
+.code {
+    width: 10%;
+    padding: 0.625em;
+    margin-top: 0.625em;
+    margin-bottom: 1.5625em;
+}
+
+.number {
+    margin-bottom: 1.5625em;
+    margin-top: 0.625em;
+    padding: 0.625em;
+    margin-left: 6px;
+    width: 78%;
+}
+
 .formSubmit {
-    border: 0px;
+    border: 0em;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 28px;
+    padding: 18px 60px;
+    letter-spacing: 2px;
+    font-family: 'ProximaNovaRegular';
+    font-weight: bold;
     background-color: #dca115;
+    text-transform: uppercase;
 }
 
 /* Footer */
 
 footer {
+    padding: 3em 11.25em;
     background-color: black;
     color: #777777;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Lato';
+    line-height: 2;
+    font-size: .7em;
+}
+
+.col1 {
+
+    text-align: left;
+}
+
+.col2 {
+    margin-top: 1.5625em;
+    text-align: right;
+}
+
+.footertxt {
+    margin: 0em;
 }
 
 /* fonts */
@@ -178,4 +250,75 @@ footer {
 @font-face {
     font-family: "Lato";
     src: url("/fonts/Lato-Regular.ttf");
+}
+
+@media screen and (max-width:900px) {
+    .slicingTest {
+        padding: 1em 1em;
+    }
+
+    .columnLayout {
+        column-gap: 1.875em;
+        background-color: black;
+        color: white;
+        padding: 1.875em 1em;
+    }
+
+    .formcont {
+        margin: 2.5em 1.25em;
+        padding: 0.625em 3.125em;
+        grid-template-columns: auto;
+        padding-top: 3.125em;
+    }
+
+    footer {
+        padding: 3em 2.95em;
+        grid-template-columns: auto;
+        font-family: 'Lato';
+        line-height: 2;
+        font-size: .55em;
+        padding-bottom: 20px;
+    }
+
+    .col2 {
+        margin-top: 0em;
+        text-align: left;
+    }
+
+    .carlocabLogo {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .nav {
+        background-color: black;
+        text-align: right;
+        height: 1.5em;
+        padding: 20px 1em;
+    }
+
+    .bearlogo {
+        padding: 0px;
+        float: left;
+        width: 140px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+
+    .links {
+        margin: auto 20%;
+        padding: 0px 100px;
+        background-color: black;
+    }
+
+    .nav-collapse {
+        /* background-color: black; */
+        /* height: 100%; */
+        display: none;
+        /* width: 100%; */
+        /* padding-top: 50px; */
+        /* position: relative; */
+    }
 }

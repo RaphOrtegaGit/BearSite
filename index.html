@@ -10,16 +10,19 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <header class="nav">
         <img class="bearlogo" src="/images/logo.png" alt="bear logo">
-        <a class="links" href="">Home</a>
-        <a class="links" href="">About</a>
-        <a class="links" href="">Contact</a>
-        <a class="links" href="">Services</a>
-        <a class="links" href=""><img src="/images/fb.png" alt="fb"></a>
-        <a class="links" href=""><img src="/images/twitter.png" alt="twitter"></a>
-        <a class="links" href=""><img src="/images/youtube.png" alt="youtube"></a>
-    </nav>
+        <button class="navbtn" id="navbtn"><img src="/images/menu.png" alt=""></button>
+        <nav class="nav-collapse topnav" id="nav-collapse">
+            <a class="links" href="">Home</a>
+            <a class="links" href="">About</a>
+            <a class="links" href="">Contact</a>
+            <a class="links" href="">Services</a>
+            <a class="links" href=""><img src="/images/fb.png" alt="fb"></a>
+            <a class="links" href=""><img src="/images/twitter.png" alt="twitter"></a>
+            <a class="links" href=""><img src="/images/youtube.png" alt="youtube"></a>
+        </nav>
+    </header>
     <div class="header">
         <h1 class="header-title">Lorem ipsum dolor sit amet consectetur.</h1>
         <p class="subheader">Vestibulum tortor metus, eleifend vel dui vel, pharetra element</p>
@@ -105,20 +108,22 @@
             <div class="contactForm">
                 <h1 class="frmTtl">Get in touch.</h1>
                 <form action="post">
-                    <label for="name">Your name</label>
-                    <br>
-                    <input type="name" name="name" class="Input" id="name" required>
-                    <br>
-                    <label for="email">Your email</label>
-                    <br>
-                    <input type="email" name="email" class="Input" id="email" required>
-                    <br>
-                    <label for="phone">Your phone</label>
-                    <br>
-                    <input type="number" required>
-
-                    <input type="tel" name="phone" class="number" id="number" required>
-                    <br>
+                    <div class="frmInputs">
+                        <label for="name">Your name</label>
+                        <br>
+                        <input type="name" name="name" class="Input" id="name" required>
+                    </div>
+                    <div class="frmInputs">
+                        <label for="email">Your email</label>
+                        <br>
+                        <input type="email" name="email" class="Input" id="email" required>
+                    </div>
+                    <div class="frmInputs">
+                        <label for="phone">Your phone</label>
+                        <br>
+                        <input placeholder="Code" type="number" class="code" required>
+                        <input placeholder="Phone" type="tel" name="phone" class="number" id="number" required>
+                    </div>
                     <input type="submit" class="formSubmit">
                 </form>
             </div>
@@ -127,16 +132,19 @@
     <footer>
         <div class="col1">
 
-            <img src="/images/carlocabLogo.png" alt="">
-            <p>Copyright © 2017 Carl Ocab Internet Marketing Services • Privacy Policy • Contact Us</p>
+            <img class="carlocabLogo" src="/images/carlocabLogo.png" alt="">
+            <p class="footertxt">Copyright © 2017 Carl Ocab Internet Marketing Services • Privacy Policy • Contact Us
+            </p>
         </div>
         <div class="col2">
-            <p>5 La Carlota St., Alabang Hills Village, Cupmg. Muntinlupa 1771, Metro Manila, Philippines
+            <p class="footertxt">5 La Carlota St., Alabang Hills Village, Cupmg. Muntinlupa 1771, Metro Manila,
+                Philippines
             </p>
-            <p style="margin: 0;">US: (800) 765-2158 Philippines 463 (917) 833-960</p>
+            <p class="footertxt">US: (800) 765-2158 Philippines 463 (917) 833-960</p>
         </div>
 
     </footer>
+    <script src="bear.js"></script>
 </body>
 
 </html>
