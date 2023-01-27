@@ -57,6 +57,10 @@ p.small {
     background-color: #9a9a9a;
 }
 
+.nav-collapse {
+    display: block;
+}
+
 /* Header Design */
 .header {
     text-align: center;
@@ -177,6 +181,10 @@ label {
     margin-bottom: 1.5625em;
 }
 
+.phonecont {
+    display: flex;
+}
+
 .code {
     width: 10%;
     padding: 0.625em;
@@ -189,7 +197,7 @@ label {
     margin-top: 0.625em;
     padding: 0.625em;
     margin-left: 6px;
-    width: 78%;
+    width: 80%;
 }
 
 .formSubmit {
@@ -291,7 +299,7 @@ footer {
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:600px) {
 
     .nav {
         background-color: black;
@@ -309,10 +317,13 @@ footer {
     }
 
     .links {
+        /* display: flex;
+        flex-basis: auto; */
         margin: 0%;
         line-height: 2;
+        letter-spacing: 2px;
         padding: 0px 20px 10px 190px;
-
+        text-transform: uppercase;
         text-align: right;
     }
 
@@ -322,5 +333,25 @@ footer {
         margin-top: 40px;
         position: sticky;
         display: none;
+    }
+
+    .header-title {
+
+        font-size: 22px;
+    }
+
+    .subheader {
+        font-size: x-small;
+    }
+
+
+    .btnContact {
+        font-size: x-small;
+        margin-top: 10px;
+        padding: 10px 40px;
+    }
+
+    .header {
+        padding: 200px 0px 400px;
     }
 }

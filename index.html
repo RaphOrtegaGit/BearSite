@@ -18,9 +18,13 @@
             <a class="links" href="">About</a>
             <a class="links" href="">Contact</a>
             <a class="links" href="">Services</a>
-            <a class="links" href=""><img src="/images/fb.png" alt="fb"><span id="fb"></span></a>
-            <a class="links" href=""><img src="/images/twitter.png" alt="twitter"></a>
-            <a class="links" href=""><img src="/images/youtube.png" alt="youtube"></a>
+            <a class="links" href="https://www.facebook.com/zuck/"><img src="/images/fb.png" alt="fb"><span
+                    id="fb"></span></a>
+            <a class="links"
+                href="https://twitter.com/Mscathygonzaga?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                    src="/images/twitter.png" alt="twitter"><span id="twitter"></span></a>
+            <a class="links" href="https://www.youtube.com/@CongTheVlogger"><img src="/images/youtube.png"
+                    alt="youtube"><span id="youtube"></span></a>
         </div>
     </header>
     <div class="header">
@@ -107,8 +111,9 @@
             </div>
             <div class="contactForm">
                 <h1 class="frmTtl">Get in touch.</h1>
-                <form action="post">
-                    <div class="frmInputs">
+                <form id="contactForm" action="post"
+                    onsubmit="return confirm('Do you really want to submit the form?');">
+                    <div class=" frmInputs">
                         <label for="name">Your name</label>
                         <br>
                         <input type="name" name="name" class="Input" id="name" required>
@@ -121,12 +126,15 @@
                     <div class="frmInputs">
                         <label for="phone">Your phone</label>
                         <br>
-                        <input placeholder="Code" type="text" class="code"
-                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                            required>
-                        <input placeholder="Phone" type="tel" name="phone" class="number" id="number"
-                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                            required>
+                        <div class="phonecont">
+
+                            <input placeholder="Code" type="text" class="code"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
+                            <input placeholder="Phone" type="tel" name="phone" class="number" id="number"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
+                        </div>
                     </div>
                     <input type="submit" class="formSubmit">
                 </form>
